@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Phoneme Demo">
+    <meta name="author" content="Phoneme Technologies">
+
+    <title>Phoneme Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#query">Run Query</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="header-content mx-auto" height="100%">
+            <h1 class="mb-5" align="center">Phoneme</h1>
+            <h4 class="mb-5" align="center">intelligent name-matching software<br/>for Arabic and English languages</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="features" id="query">
+      <div class="container h-100">
+        <div class="section-heading text-center">
+          <h2>Enter the name and distance</h2>
+          <br>
+          <!--<p class="text-muted">Check out what you can do with this app theme!</p>-->
+          <input type="text" id="inputName" value="" /><input type="text" id="inputDistance" value="0.001" width="10"/>
+          <input type="submit" id="btnCallService" value="Lookup" /><br>
+        </div>
+        <div class="section-heading text-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <!--<i class="icon-screen-smartphone text-primary"></i>-->
+                  <h4 id="labelEnglish" hidden="true">English</h3>
+                  <p class="text-muted" id="outputEnglish"></p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <!--<i class="icon-camera text-primary"></i>-->
+                  <h4 id="labelArabic" hidden="true">Arabic</h3>
+                  <p class="text-muted" id="outputArabic"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about bg-primary" id="about">
+      <div class="container">
+        <p align="center">Developed by a team of dedicated machine learning experts and leading data scientists, Phoneme® aims to offer an unprecedented accuracy of name-matching across these languages.
+        Phoneme® incorporates innovative approach to deep learning by combining breakthrough application of Artificial Neural Nets with hands-on expertise of native-speaking linguists and Natural Language Processing practitioners.</p>
+        <footer><p>&copy; 2017 Phoneme Technologies. All Rights Reserved.</p></footer>
+      </div>
+    </section>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/phoneme.js"></script>
+
+  </body>
+
+</html>

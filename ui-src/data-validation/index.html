@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Phoneme Data Validation">
+    <meta name="author" content="Phoneme Technologies">
+
+    <title>Phoneme Data Validation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <section class="features" id="query">
+      <form id="form1" action="" method="post">
+        <div class="container h-100">
+          <div class="text-center">
+            <h2>Validate name variants</h2>
+            User <input type="text" id="inputLogin" value="" />
+            <input type="text" id="inputIndex" value="" hidden="true"/>
+            <input type="submit" id="btnCallService" value="Submit" />
+            <br><br><p id="labelDesc" hidden="true">Select invalid variants for names below</p>
+          </div>
+          <div class="section-heading text-center">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="feature-item">
+                  <h4 id="labelEnglish" hidden="true">English:</h4>
+                  <p class="text-muted" id="outputEnglish"></p>
+                </div>
+                <div class="feature-item">
+                  <h4 id="labelArabic" hidden="true">Arabic:</h4>
+                  <p class="text-muted" id="outputArabic"></p>
+                </div>
+                <div class="feature-item">
+                  <h4 id="labelArabicYamli" hidden="true">Arabic Yamli:</h4>
+                  <p class="text-muted" id="outputArabicYamli"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/phoneme-validate.js"></script>
+
+  </body>
+
+</html>
