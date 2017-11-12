@@ -1079,10 +1079,12 @@ ENG2 VARCHAR(25),
 ARB2 VARCHAR(25),
 ARB_VARIANTS VARCHAR(20000),
 ARB_YAMLI_VARIANTS VARCHAR(20000),
-ENG_VARIANTS VARCHAR(20000)
+ENG_VARIANTS VARCHAR(20000),
+ARB_MODEL_VARIANTS VARCHAR(20000),
+ENG_MODEL_VARIANTS VARCHAR(20000)
 );
 
-\COPY validation.validation_data_src FROM '/data-preparation/output/understanding_data/all_names_with_yamli_merged.tsv' DELIMITER E'\t' CSV;
+\COPY validation.validation_data_src FROM '/data-preparation/output/understanding_data/all_names_with_yamli.tsv' DELIMITER E'\t' CSV;
 
 
 DROP TABLE validation.validation_data;
@@ -1093,16 +1095,20 @@ LOGIN VARCHAR(20),
 ENG VARCHAR(25),
 ARB VARCHAR(25),
 ENG_VARIANTS VARCHAR(20000),
+ENG_MODEL_VARIANTS VARCHAR(20000),
 ARB_VARIANTS VARCHAR(20000),
+ARB_MODEL_VARIANTS VARCHAR(20000),
 ARB_YAMLI_VARIANTS VARCHAR(20000),
-ENG_INVALIDATED VARCHAR(4000),
-ARB_INVALIDATED VARCHAR(4000),
-ARB_YAMLI_INVALIDATED VARCHAR(4000),
+ENG_INVALIDATED VARCHAR(20000),
+ENG_MODEL_INVALIDATED VARCHAR(20000),
+ARB_INVALIDATED VARCHAR(20000),
+ARB_MODEL_INVALIDATED VARCHAR(20000),
+ARB_YAMLI_INVALIDATED VARCHAR(20000),
 CONSTRAINT VALIDATION_DATA_PKEY PRIMARY KEY (ID)
 );
 
-insert into validation.validation_data(eng, arb, eng_variants, arb_variants, arb_yamli_variants)
-select eng, arb, eng_variants, arb_variants, arb_yamli_variants
+insert into validation.validation_data(eng, arb, eng_variants, eng_model_variants, arb_variants, arb_model_variants, arb_yamli_variants)
+select eng, arb, eng_variants, eng_model_variants, arb_variants, arb_model_variants, arb_yamli_variants
 from validation.validation_data_src;
 
 
